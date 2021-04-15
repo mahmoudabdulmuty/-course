@@ -34,6 +34,7 @@ const description = `${country} is in ${continent}, and its ${population} millio
 console.log(description);
 
 /*****************************************************/
+
 // Coding Challenge #1
 const markMass = 95,
   johnMass = 85;
@@ -80,3 +81,30 @@ if (population > 33) {
 // }
 
 /*****************************************************/
+
+// Logical Operators
+if ((language = "English" && population < 50 && !isIsland)) {
+  console.log(`you should live in ${country}`);
+} else {
+  console.log(`${country} doesn't meet your criteria`);
+}
+
+/*****************************************************/
+
+// Coding Challenge #3
+const d1 = 96,
+  d2 = 108,
+  d3 = 89;
+const k1 = 88,
+  k2 = 91,
+  k3 = 110;
+const dolphinAverageScore = (d1 + d2 + d3) / 3;
+const koalaAverageScore = (k1 + k2 + k3) / 3;
+
+if (dolphinAverageScore > koalaAverageScore) {
+  console.log(`dolphin is the winners 🏆`);
+} else if (dolphinAverageScore < koalaAverageScore) {
+  console.log(`koala is the winners 🏆`);
+} else {
+  console.log(`DRAW!!`);
+}
