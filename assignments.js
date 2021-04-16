@@ -1,3 +1,4 @@
+"user strict";
 // Values and Variables
 const country = "Egypt";
 const continent = "Africa";
@@ -8,7 +9,7 @@ console.log(country, continent, population);
 
 // Data Types
 const isIsland = false;
-let language;
+let language = "Arabic";
 console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
@@ -17,10 +18,6 @@ console.log(typeof language);
 /*****************************************************/
 
 // let, const and var
-language = "Arabic";
-
-/*****************************************************/
-
 // Basic Operators
 let halfedPopulation = population / 2;
 population++;
@@ -83,7 +80,7 @@ if (population > 33) {
 /*****************************************************/
 
 // Logical Operators
-if ((language = "English" && population < 50 && !isIsland)) {
+if (language === "English" && population < 50 && !isIsland) {
   console.log(`you should live in ${country}`);
 } else {
   console.log(`${country} doesn't meet your criteria`);
@@ -92,14 +89,8 @@ if ((language = "English" && population < 50 && !isIsland)) {
 /*****************************************************/
 
 // Coding Challenge #3
-const d1 = 96,
-  d2 = 108,
-  d3 = 89;
-const k1 = 88,
-  k2 = 91,
-  k3 = 110;
-const dolphinAverageScore = (d1 + d2 + d3) / 3;
-const koalaAverageScore = (k1 + k2 + k3) / 3;
+const dolphinAverageScore = (96 + 108 + 89) / 3;
+const koalaAverageScore = (88 + 91 + 110) / 3;
 
 if (dolphinAverageScore > koalaAverageScore) {
   console.log(`dolphin is the winners 🏆`);
@@ -108,3 +99,63 @@ if (dolphinAverageScore > koalaAverageScore) {
 } else {
   console.log(`DRAW!!`);
 }
+
+/*****************************************************/
+
+// writing if-else instead of switch cases challenge
+let day = "tuesday";
+
+if (day === "monday") {
+  console.log("plan course structure");
+} else if (day === "tuesday") {
+  console.log("prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("write code examples");
+} else if (day === "friday") {
+  console.log("record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend");
+} else {
+  console.log("not a vaild day");
+}
+
+/*****************************************************/
+
+// The switch Statement
+switch (language) {
+  case "Chinese":
+    console.log("MOST number of native speakers!");
+    break;
+  case "Spanish":
+    console.log("2nd place in number of native speakers");
+    break;
+  case "English":
+    console.log("3rd place");
+    break;
+  case "Hindi":
+    console.log("Number 4");
+    break;
+  case "Arabic":
+    console.log("5th most spoken language");
+    break;
+  default:
+    console.log("Not a language 😂");
+}
+
+/*****************************************************/
+
+// The Conditional (Ternary) Operator
+console.log(
+  `${country}'s population is ${population >= 33 ? "above" : "below"} average`
+);
+
+/*****************************************************/
+
+// Coding Challenge #4
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+);
+
+/*****************************************************/
