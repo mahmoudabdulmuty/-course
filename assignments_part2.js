@@ -98,3 +98,25 @@ const myCountry = {
 };
 console.log(myCountry);
 // ************************************************************ //
+// Dot vs. Bracket Notation
+console.log(
+  `${myCountry.country} has ${myCountry.population} million Egyptian-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+);
+myCountry.population = myCountry.population + 2;
+console.log(
+  `${myCountry.country} has ${myCountry.population} million Egyptian-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+);
+myCountry['population'] = myCountry['population'] - 2;
+console.log(
+  `${myCountry.country} has ${myCountry.population} million Egyptian-speaking people,${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+);
+// challenge in the video
+const jonas = {
+  friends: ['Michael', 'Peter', 'Steven'],
+};
+console.log(
+  `Jonas has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+);
+// ************************************************************ //
+
+// Object Methods
