@@ -56,3 +56,32 @@ const checkWinner = (A, B) => {
 };
 checkWinner(avgDolphins, avgKoalas);
 // ************************************************************ //
+// Introduction to Arrays
+const populations = [100, 80, 60, 37];
+console.log(populations.length === 4);
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+];
+console.log(percentages);
+// ************************************************************ //
+// Basic Array Operations (Methods)
+const neighbours = ['Sudan', 'Libya', 'Palestine'];
+neighbours.push('Utopia');
+neighbours.pop();
+if (neighbours.includes('Germany')) {
+  console.log(`Probably not a central European country 😂`);
+}
+neighbours[neighbours.indexOf('Libya')] = 'Sweeden';
+console.log(neighbours);
+// ************************************************************ //
+// Coding Challenge #2
+const calcTip = bill => (bill >= 50 && bill <= 300 ? 0.2 * bill : 0.15 * bill);
+console.log(calcTip(400));
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total);
+// ************************************************************ //
