@@ -95,6 +95,14 @@ const myCountry = {
   language: 'Arabic',
   population: 100,
   neighbours: ['Sudan', 'Libya', 'Palestine'],
+  describe: function () {
+    console.log(
+      `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`
+    );
+  },
+  checkIsland: function () {
+    this.IsIsland = !this.neighbours.length;
+  },
 };
 console.log(myCountry);
 // ************************************************************ //
@@ -112,11 +120,28 @@ console.log(
 );
 // challenge in the video
 const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  birthYear: '1991',
+  job: 'Teacher',
   friends: ['Michael', 'Peter', 'Steven'],
+  hasDriverLiscence: false,
+  getSummary() {
+    console.log(
+      `${this.firstName} is a ${2037 - this.birthYear}-year old ${
+        jonas.job
+      }, and he has ${this.hasDriverLiscence ? 'a' : 'no'} driver liscence`
+    );
+  },
 };
 console.log(
-  `Jonas has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
 );
 // ************************************************************ //
-
 // Object Methods
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);
+// challenge in the video
+jonas.getSummary();
+// ************************************************************ //
