@@ -145,3 +145,28 @@ console.log(myCountry);
 // challenge in the video
 jonas.getSummary();
 // ************************************************************ //
+// Coding Challenge #3
+const mark = {
+  fullname: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    return (this.BMI = this.mass / this.height ** 2);
+  },
+};
+const john = {
+  fullname: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    return (this.BMI = this.mass / this.height ** 2);
+  },
+};
+mark.calcBMI();
+john.calcBMI();
+if (john.BMI > mark.BMI) {
+  console.log(`John's BMI (${john.BMI}) is higher than Mark's (${mark.BMI})`);
+} else if (mark.BMI > john.BMI) {
+  console.log(`Mark's BMI (${mark.BMI}) is higher than John's (${john.BMI})`);
+}
+// ************************************************************ //
