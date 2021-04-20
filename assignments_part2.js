@@ -63,6 +63,7 @@ const percentages = [
   percentageOfWorld1(populations[0]),
   percentageOfWorld1(populations[1]),
   percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
 ];
 console.log(percentages);
 // ************************************************************ //
@@ -175,3 +176,9 @@ for (let i = 1; i <= 50; i++) {
   console.log(`Voter number ${i} is currently voting`);
 }
 // ************************************************************ //
+// Looping Arrays, Breaking and Continuing
+const percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
