@@ -78,18 +78,15 @@ neighbours[neighbours.indexOf('Libya')] = 'Sweeden';
 console.log(neighbours);
 // ************************************************************ //
 // Coding Challenge #2
-const calcTip = bill => (bill >= 50 && bill <= 300 ? 0.2 * bill : 0.15 * bill);
+let calcTip = bill => (bill >= 50 && bill <= 300 ? 0.2 * bill : 0.15 * bill);
 console.log(calcTip(400));
-const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+let bills = [125, 555, 44];
+let tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(tips);
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+let total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total);
 // ************************************************************ //
 // Introduction to Objects
-// Create an object called 'myCountry' for a country of your choice, containing
-// properties 'country', 'capital', 'language', 'population' and
-// 'neighbours' (an array like we used in previous assignments)
 const myCountry = {
   country: 'Egypt',
   capital: 'Cairo',
@@ -203,4 +200,15 @@ while (i < populations.length) {
   i++;
 }
 console.log(percentages3);
+// ************************************************************ //
+// Coding Challenge #4
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let total = [];
+let calcTip = bill => (bill >= 50 && bill <= 300 ? 0.2 * bill : 0.15 * bill);
+for (i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+  total.push(bills[i] + tips[i]);
+}
+console.log(tips, total);
 // ************************************************************ //
