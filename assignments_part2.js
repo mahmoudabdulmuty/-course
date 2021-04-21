@@ -202,13 +202,23 @@ while (i < populations.length) {
 console.log(percentages3);
 // ************************************************************ //
 // Coding Challenge #4
-let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-let tips = [];
-let total = [];
-let calcTip = bill => (bill >= 50 && bill <= 300 ? 0.2 * bill : 0.15 * bill);
-for (i = 0; i < bills.length; i++) {
-  tips.push(calcTip(bills[i]));
-  total.push(bills[i] + tips[i]);
+const bills2 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips2 = [];
+const total2 = [];
+const calcTip2 = bill => (bill >= 50 && bill <= 300 ? 0.2 * bill : 0.15 * bill);
+for (i = 0; i < bills2.length; i++) {
+  tips2.push(calcTip(bills2[i]));
+  total2.push(bills2[i] + tips2[i]);
 }
-console.log(tips, total);
+console.log(tips2, total2);
+// Bonus
+const calcAverage2 = arr => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return Math.round(sum / arr.length);
+};
+console.log(calcAverage2(total2));
+
 // ************************************************************ //
