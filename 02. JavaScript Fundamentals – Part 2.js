@@ -220,5 +220,4 @@ const calcAverage2 = arr => {
   return Math.round(sum / arr.length);
 };
 console.log(calcAverage2(total2));
-
 // ************************************************************ //
