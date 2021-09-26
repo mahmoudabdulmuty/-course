@@ -70,3 +70,14 @@ else
 	);
 
 /*****************************************************/
+
+// Taking Decisions: if / else Statements
+const average = 33;
+if (population > average)
+	console.log(`${country}'s population is above average`);
+else
+	console.log(
+		`${country}'s population is ${average - population} million below average`
+	);
+
+/*****************************************************/
