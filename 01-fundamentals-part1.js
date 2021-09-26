@@ -18,3 +18,28 @@ console.log(
 );
 
 /*****************************************************/
+
+// let, const and var
+// Basic Operators
+language = 'Arabic';
+const halfPopulation = population / 2;
+population++;
+const finlandPopulation = 6;
+const doesYourCountryHaveMorePopulationThanFinland =
+	population > finlandPopulation;
+console.log(doesYourCountryHaveMorePopulationThanFinland, population);
+let description =
+	country +
+	' is in ' +
+	continent +
+	', and its ' +
+	population +
+	' million people speak ' +
+	language;
+console.log(description);
+//  Strings and Template Literals
+description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+console.log(description);
+
+/*****************************************************/
+
