@@ -55,7 +55,6 @@ const markBMI = markMass / markHeight ** 2;
 const JohnBMI = JohnMass / JohnHeight ** 2;
 const isMarkHasHeigherBMI = markBMI > JohnBMI;
 console.log(markBMI, JohnBMI, isMarkHasHeigherBMI);
-// Coding Challenge#2
 if (markBMI > JohnBMI)
 	console.log(
 		`Mark's BMI (${markBMI.toFixed(
@@ -79,5 +78,14 @@ else
 	console.log(
 		`${country}'s population is ${average - population} million below average`
 	);
+
+/*****************************************************/
+
+// Type Conversion and Coercion
+console.log('9' - '5'); //4
+console.log('19' - '13' + '17'); //617
+console.log('19' - '13' + 17); //23
+console.log('123' < 57); //false
+console.log(5 + 6 + '4' + 9 - 4 - 2); //1143
 
 /*****************************************************/
