@@ -43,3 +43,30 @@ console.log(description);
 
 /*****************************************************/
 
+// Coding Challenge#1
+let markHeight = 1.69,
+	markMass = 78,
+	JohnHeight = 1.95,
+	JohnMass = 92; //TEST DATA#1
+
+(markHeight = 1.88), (markMass = 95), (JohnHeight = 1.76), (JohnMass = 85); //TEST DATA#2
+
+const markBMI = markMass / markHeight ** 2;
+const JohnBMI = JohnMass / JohnHeight ** 2;
+const isMarkHasHeigherBMI = markBMI > JohnBMI;
+console.log(markBMI, JohnBMI, isMarkHasHeigherBMI);
+// Coding Challenge#2
+if (markBMI > JohnBMI)
+	console.log(
+		`Mark's BMI (${markBMI.toFixed(
+			1
+		)}) is higher than John's BMI (${JohnBMI.toFixed(1)})`
+	);
+else
+	console.log(
+		`John's BMI (${JohnBMI.toFixed(
+			1
+		)}) is higher than Mark's BMI (${markBMI.toFixed(1)})`
+	);
+
+/*****************************************************/
