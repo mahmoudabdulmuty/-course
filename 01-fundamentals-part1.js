@@ -97,3 +97,14 @@ let numNeighbours = Number(
 if (numNeighbours === 1) console.log('Only 1 border');
 else if (numNeighbours > 1) console.log('more than 1 border');
 else console.log('No borders');
+
+/*****************************************************/
+
+// Logical Operators
+if (language === 'English' && population < 50 && !isIsland) {
+	console.log(`you should live in ${country}`);
+} else {
+	console.log(`you shouldn't live in ${country}`);
+}
+
+/*****************************************************/
