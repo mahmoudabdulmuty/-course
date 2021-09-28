@@ -124,5 +124,12 @@ if (dolpinsAverage > koalasAverage && dolpinsAverage >= 100) console.log(`Dolpin
 else if (dolpinsAverage < koalasAverage && koalasAverage >= 100) console.log(`Koalas is the winner`);
 else if (dolpinsAverage === koalasAverage && koalasAverage >= 100 && dolpinsAverage >= 100) console.log(`Draw`);
 else console.log(`No one wins`);
+
 /*****************************************************/
 
+// writing if-else instead of switch cases challenge
+const day = 'monday'
+if (day === 'sunday' || day === 'monday') console.log('plan course structure', 'Go to coding bootcamp');
+else if (day === 'tuesday') console.log('prepare theory videos');
+else if (day === 'wednesday' || day === 'thursday') console.log('Write code examples');
+else if (day === 'friday' || day === 'staurday') console.log('Enjoy the weekend ');
