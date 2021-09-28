@@ -133,3 +133,23 @@ if (day === 'sunday' || day === 'monday') console.log('plan course structure', '
 else if (day === 'tuesday') console.log('prepare theory videos');
 else if (day === 'wednesday' || day === 'thursday') console.log('Write code examples');
 else if (day === 'friday' || day === 'staurday') console.log('Enjoy the weekend ');
+
+/*****************************************************/
+
+// The switch Statement
+switch (language) {
+	case 'Chinese':
+	case 'Mandarian': console.log(`MOST Number of native speakers!`);
+		break;
+	case 'Spanish': console.log(`2nd place in native speakers`);
+		break;
+	case 'English': console.log(`3rd place`);
+		break;
+	case 'Hindi': console.log(`Number 4`);
+		break;
+	case 'Arabic': console.log(`5th most spoken language`);
+		break;
+	default: console.log(`Greet language too :D`);
+}
+/*****************************************************/
+
