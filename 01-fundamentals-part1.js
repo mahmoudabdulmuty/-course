@@ -55,17 +55,14 @@ const markBMI = markMass / markHeight ** 2;
 const JohnBMI = JohnMass / JohnHeight ** 2;
 const isMarkHasHeigherBMI = markBMI > JohnBMI;
 console.log(markBMI, JohnBMI, isMarkHasHeigherBMI);
+// Coding Challenge#2
 if (markBMI > JohnBMI)
 	console.log(
-		`Mark's BMI (${markBMI.toFixed(
-			1
-		)}) is higher than John's BMI (${JohnBMI.toFixed(1)})`
+		`Mark's BMI (${markBMI.toFixed(1)}) is higher than John's BMI (${JohnBMI.toFixed(1)})`
 	);
 else
 	console.log(
-		`John's BMI (${JohnBMI.toFixed(
-			1
-		)}) is higher than Mark's BMI (${markBMI.toFixed(1)})`
+		`John's BMI (${JohnBMI.toFixed(1)}) is higher than Mark's BMI (${markBMI.toFixed(1)})`
 	);
 
 /*****************************************************/
@@ -91,12 +88,12 @@ console.log(5 + 6 + '4' + 9 - 4 - 2); //1143
 /*****************************************************/
 
 // Equality Operators: == vs. ===
-let numNeighbours = Number(
-	prompt('How many neighbour countries does your country have?')
-);
-if (numNeighbours === 1) console.log('Only 1 border');
-else if (numNeighbours > 1) console.log('more than 1 border');
-else console.log('No borders');
+// const numNeighbours = Number(
+// 	prompt('How many neighbour countries does your country have?')
+// );
+// if (numNeighbours === 1) console.log('Only 1 border');
+// else if (numNeighbours > 1) console.log('more than 1 border');
+// else console.log('No borders');
 
 /*****************************************************/
 
@@ -108,3 +105,24 @@ if (language === 'English' && population < 50 && !isIsland) {
 }
 
 /*****************************************************/
+
+// Coding Challenge #3
+let dolpinsAverage = (96 + 108 + 89) / 3, koalasAverage = (88 + 91 + 110) / 3 // Test Data
+console.log(dolpinsAverage, koalasAverage);
+if (dolpinsAverage > koalasAverage) console.log(`Dolpins is the winner`);
+else if (dolpinsAverage < koalasAverage) console.log(`Koalas is the winner`);
+else console.log(`Draw`);
+// min 100 for average score
+dolpinsAverage = (97 + 112 + 101) / 3, koalasAverage = (109 + 95 + 123) / 3 //TEST DATA BOUNUS 1
+if (dolpinsAverage > koalasAverage && dolpinsAverage >= 100) console.log(`Dolpins is the winner`);
+else if (dolpinsAverage < koalasAverage && koalasAverage >= 100) console.log(`Koalas is the winner`);
+else if (dolpinsAverage === koalasAverage) console.log(`Draw`);
+else console.log(`No one wins`);
+// min 100 for average score to also draw
+dolpinsAverage = (97 + 112 + 101) / 3, koalasAverage = (109 + 95 + 106) / 3 //TEST DATA BOUNUS 2
+if (dolpinsAverage > koalasAverage && dolpinsAverage >= 100) console.log(`Dolpins is the winner`);
+else if (dolpinsAverage < koalasAverage && koalasAverage >= 100) console.log(`Koalas is the winner`);
+else if (dolpinsAverage === koalasAverage && koalasAverage >= 100 && dolpinsAverage >= 100) console.log(`Draw`);
+else console.log(`No one wins`);
+/*****************************************************/
+
