@@ -106,7 +106,7 @@ if (language === 'English' && population < 50 && !isIsland) {
 
 /*****************************************************/
 
-// Coding Challenge #3
+// Coding Challenge#3
 let dolpinsAverage = (96 + 108 + 89) / 3, koalasAverage = (88 + 91 + 110) / 3 // Test Data
 console.log(dolpinsAverage, koalasAverage);
 if (dolpinsAverage > koalasAverage) console.log(`Dolpins is the winner`);
@@ -155,4 +155,14 @@ switch (language) {
 
 // The Conditional (Ternary) Operator
 console.log(`${country}'s population is ${population > average ? 'above' : 'below'} average`)
+
+/*****************************************************/
+
+// Coding Challenge#4
+let bill = 275, bill = 40, bill = 430 //Test Data
+const tip = (bill > 50 && bill < 300) ? 0.15 * bill : 0.2 * bill
+const total = tip + bill
+console.log(`The bill was ${bill}, the tip was ${tip}, the total was ${total}`)
+
+/*****************************************************/
 
