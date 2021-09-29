@@ -93,23 +93,23 @@ console.log(percentages);
 // Basic Array Operations (Methods)
 const neighbours = ['Lybia', 'Sudan', 'Palestine', 'Saudi Arabia']
 neighbours.push('Utopia')
+console.log(neighbours);
 neighbours.pop()
+console.log(neighbours);
 if (!neighbours.includes('Germany')) console.log(`Probably not a central European country :D`);
 neighbours[neighbours.indexOf('Palestine')] = 'Algeria'
 console.log(neighbours);
 
 /*****************************************************/
 
-// Add elements
-
-/*****************************************************/
-
-// Remove elements
-
-/*****************************************************/
-
 // Coding Challenge#2
-
+const clacTip = bill => bill > 50 && bill < 300 ? 0.15 * bill : 0.2 * bill
+const bills = [125, 555, 44] //Test Data
+const tips = [clacTip(bills[0]), clacTip(bills[1]), clacTip(bills[2])]
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
+console.log(bills);
+console.log(tips);
+console.log(totals);
 /*****************************************************/
 
 // Introduction to Objects
