@@ -32,9 +32,17 @@ const GermanyPercent = percentageOfWorld2(83)
 const FinlandPercent = percentageOfWorld2(6)
 const PortugalPercent = percentageOfWorld2(10)
 console.log(ChinaPercent, EgyptPercent, GermanyPercent, FinlandPercent, PortugalPercent);
+
 /*****************************************************/
 
 // Arrow Functions
+const percentageOfWorld3 = population => ((population / 7900) * 100).toFixed(1)
+const ChinaPercentageOfWorld = percentageOfWorld3(1441)
+const EgyptPercentageOfWorld = percentageOfWorld3(100)
+const GermanyPercentageOfWorld = percentageOfWorld3(83)
+const FinlandPercentageOfWorld = percentageOfWorld3(6)
+const PortugalPercentageOfWorld = percentageOfWorld3(10)
+console.log(ChinaPercentageOfWorld, EgyptPercentageOfWorld, GermanyPercentageOfWorld, FinlandPercentageOfWorld, PortugalPercentageOfWorld)
 
 /*****************************************************/
 
