@@ -62,9 +62,7 @@ console.log(chinaPercentDescribed);
 
 // Coding Challenge#1
 const clacAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
-
 let dolphinsAverage = clacAverage(44, 23, 71), koalasAverage = clacAverage(65, 54, 49) //Test Data#1
-
 const checkWinner = (teamOneAverage, teamTwoAverage, teamOne, teamTwo) => {
   if (teamOneAverage > (teamTwoAverage * 2)) {
     console.log(`${teamOne} wins (${teamOneAverage} vs. ${teamTwoAverage})`);
@@ -74,27 +72,21 @@ const checkWinner = (teamOneAverage, teamTwoAverage, teamOne, teamTwo) => {
     console.log(`No team wins`);
   }
 }
-
 checkWinner(dolphinsAverage, koalasAverage, 'Dolphins', 'Koalas')
-
 dolphinsAverage = clacAverage(85, 54, 41), koalasAverage = clacAverage(23, 34, 27) //Test Data#2
 checkWinner(dolphinsAverage, koalasAverage, 'Dolphins ', 'Koalas')
 
 /*****************************************************/
 
-// Test 1
-
-/*****************************************************/
-
-// Test 2
-
-/*****************************************************/
-
 // Introduction to Arrays
-
-/*****************************************************/
-
-// Exercise
+const populations = [1441, 100, 6, 83]
+console.log(populations.length === 4);
+const percentages = [
+  percentageOfWorld1(1441),
+  percentageOfWorld1(6),
+  percentageOfWorld1(100),
+  percentageOfWorld1(83)
+]
 
 /*****************************************************/
 
