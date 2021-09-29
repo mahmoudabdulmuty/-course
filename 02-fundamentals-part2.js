@@ -47,14 +47,20 @@ console.log(ChinaPercentageOfWorld, EgyptPercentageOfWorld, GermanyPercentageOfW
 /*****************************************************/
 
 // Functions Calling Other Functions
+const describePopulation = (country, population) => {
+  const precentage = percentageOfWorld1(population)
+  return `${country} has ${population} million people, which is about ${precentage} of the world`
+}
+const egyptPercentDescribed = describePopulation('Egypt', 100)
+const germanyPercentDescribed = describePopulation('Finland', 6)
+const chinaPercentDescribed = describePopulation('Germany', 83)
+console.log(egyptPercentDescribed);
+console.log(germanyPercentDescribed);
+console.log(chinaPercentDescribed);
 
 /*****************************************************/
 
-// Reviewing Functions
-
-/*****************************************************/
-
-// Coding Challenge #1
+// Coding Challenge#1
 
 /*****************************************************/
 
@@ -86,7 +92,7 @@ console.log(ChinaPercentageOfWorld, EgyptPercentageOfWorld, GermanyPercentageOfW
 
 /*****************************************************/
 
-// Coding Challenge #2
+// Coding Challenge#2
 
 /*****************************************************/
 
@@ -110,7 +116,7 @@ console.log(ChinaPercentageOfWorld, EgyptPercentageOfWorld, GermanyPercentageOfW
 
 /*****************************************************/
 
-// Coding Challenge #3
+// Coding Challenge#3
 
 /*****************************************************/
 
@@ -134,6 +140,6 @@ console.log(ChinaPercentageOfWorld, EgyptPercentageOfWorld, GermanyPercentageOfW
 
 /*****************************************************/
 
-// Coding Challenge #4
+// Coding Challenge#4
 
 /*****************************************************/
