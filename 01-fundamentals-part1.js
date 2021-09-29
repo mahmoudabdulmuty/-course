@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 // Values and Variables
 const country = 'Egypt',
 	continent = 'Africa';
