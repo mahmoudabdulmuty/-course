@@ -61,6 +61,24 @@ console.log(chinaPercentDescribed);
 /*****************************************************/
 
 // Coding Challenge#1
+const clacAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
+
+let dolphinsAverage = clacAverage(44, 23, 71), koalasAverage = clacAverage(65, 54, 49) //Test Data#1
+
+const checkWinner = (teamOneAverage, teamTwoAverage, teamOne, teamTwo) => {
+  if (teamOneAverage > (teamTwoAverage * 2)) {
+    console.log(`${teamOne} wins (${teamOneAverage} vs. ${teamTwoAverage})`);
+  } else if (teamTwoAverage > (teamOneAverage * 2)) {
+    console.log(`${teamTwo} wins (${teamTwoAverage} vs. ${teamOneAverage})`);
+  } else {
+    console.log(`No team wins`);
+  }
+}
+
+checkWinner(dolphinsAverage, koalasAverage, 'Dolphins', 'Koalas')
+
+dolphinsAverage = clacAverage(85, 54, 41), koalasAverage = clacAverage(23, 34, 27) //Test Data#2
+checkWinner(dolphinsAverage, koalasAverage, 'Dolphins ', 'Koalas')
 
 /*****************************************************/
 
