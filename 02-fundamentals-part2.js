@@ -87,10 +87,16 @@ const percentages = [
   percentageOfWorld1(100),
   percentageOfWorld1(83)
 ]
-
+console.log(percentages);
 /*****************************************************/
 
 // Basic Array Operations (Methods)
+const neighbours = ['Lybia', 'Sudan', 'Palestine', 'Saudi Arabia']
+neighbours.push('Utopia')
+neighbours.pop()
+if (neighbours.includes('Germany')) console.log(`Probably not a central European country :D`);
+neighbours[1] = 'Algeria'
+console.log(neighbours);
 
 /*****************************************************/
 
