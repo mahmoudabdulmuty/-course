@@ -130,22 +130,31 @@ and a capital called ${myCountry.capital}`)
 
 /*****************************************************/
 
-// Challenge
+// Dot vs. Bracket Notation Challenge
 const jonas = {
   firstName: 'Jonas',
   lastName: 'Schmedtmann',
-  age: 2037 - 1991,
   job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
+  birthYear: 1991,
+  hasDriverLiscence: true,
+  friends: ['Michael', 'Peter', 'Steven'],
+  calcAge() {
+    this.age = 2037 - this.birthYear
+    return this.age
+  }
 }
 console.log(`${jonas.firstName} has ${jonas.friends.length} firends, and his best friend is called ${jonas.friends[0]}`);
+// Object Methods Challenge
+jonas.calcAge()
+console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has ${jonas.hasDriverLiscence ? 'a' : 'no'} driver's liscence`);
+
 /*****************************************************/
 
 // Object Methods
 
 /*****************************************************/
 
-// Challenge
+
 
 /*****************************************************/
 
