@@ -110,18 +110,35 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]]
 console.log(bills);
 console.log(tips);
 console.log(totals);
+
 /*****************************************************/
 
 // Introduction to Objects
-
+const myCountry = {
+  country: 'Egypt',
+  capital: 'Cairo',
+  language: 'Arabic',
+  population: 100,
+  neighbours: ['Lybia', 'Sudan', 'Palestine', 'Saudi Arabia']
+}
+console.log(myCountry);
 /*****************************************************/
 
 // Dot vs. Bracket Notation
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries
+and a capital called ${myCountry.capital}`)
 
 /*****************************************************/
 
 // Challenge
-
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven']
+}
+console.log(`${jonas.firstName} has ${jonas.friends.length} firends, and his best friend is called ${jonas.friends[0]}`);
 /*****************************************************/
 
 // Object Methods
