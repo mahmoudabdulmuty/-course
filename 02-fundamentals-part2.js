@@ -141,20 +141,18 @@ const jonas = {
   calcAge() {
     this.age = 2037 - this.birthYear
     return this.age
+  }, getSummary() {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLiscence ? 'a' : 'no'} driver's liscence`;
   }
 }
 console.log(`${jonas.firstName} has ${jonas.friends.length} firends, and his best friend is called ${jonas.friends[0]}`);
 // Object Methods Challenge
 jonas.calcAge()
-console.log(`${jonas.firstName} is a ${jonas.age}-year old ${jonas.job}, and he has ${jonas.hasDriverLiscence ? 'a' : 'no'} driver's liscence`);
+console.log(jonas.getSummary());
 
 /*****************************************************/
 
 // Object Methods
-
-/*****************************************************/
-
-
 
 /*****************************************************/
 
