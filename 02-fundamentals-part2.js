@@ -147,7 +147,7 @@ const jonas = {
 }
 console.log(`${jonas.firstName} has ${jonas.friends.length} firends, and his best friend is called ${jonas.friends[0]}`);
 // Object Methods Challenge
-jonas.calcAge()
+console.log(jonas.calcAge());
 console.log(jonas.getSummary());
 
 /*****************************************************/
@@ -157,7 +157,37 @@ console.log(jonas.getSummary());
 /*****************************************************/
 
 // Coding Challenge#3
-
+const mark = {
+  firstName: 'Mark',
+  lastName: 'Miller',
+  mass: 78,
+  height: 1.69,
+  fullName() {
+    this.fullName = `${this.firstName} ${this.lastName}`
+    return this.fullName
+  },
+  calcBMI() {
+    this.BMI = this.mass / (this.height ** 2)
+    return this.BMI
+  }
+}
+const john = {
+  firstName: 'John',
+  lastName: 'Smith',
+  mass: 92,
+  height: 1.95,
+  fullName() {
+    this.fullName = `${this.firstName} ${this.lastName}`
+    return this.fullName
+  },
+  calcBMI() {
+    this.BMI = this.mass / (this.height ** 2)
+    return this.BMI
+  }
+}
+const result = john.calcBMI() > mark.calcBMI() ?
+  `${john.fullName}'s BMI (${john.calcBMI().toFixed(1)}) is higher than ${mark.fullName()}'s BMI (${mark.calcBMI().toFixed(1)})` : `${mark.fullName()}'s BMI (${mark.calcBMI().toFixed(1)}) is higher than ${john.fullName()}'s BMI (${john.calcBMI().toFixed(1)})`
+console.log(result);
 /*****************************************************/
 
 // Iteration: The for Loop
