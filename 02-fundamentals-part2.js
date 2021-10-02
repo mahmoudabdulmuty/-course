@@ -61,8 +61,8 @@ console.log(chinaPercentDescribed);
 /*****************************************************/
 
 // Coding Challenge#1
-const clacAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
-let dolphinsAverage = clacAverage(44, 23, 71), koalasAverage = clacAverage(65, 54, 49) //Test Data#1
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
+let dolphinsAverage = calcAverage(44, 23, 71), koalasAverage = calcAverage(65, 54, 49) //Test Data#1
 const checkWinner = (teamOneAverage, teamTwoAverage, teamOne, teamTwo) => {
   if (teamOneAverage > (teamTwoAverage * 2)) {
     console.log(`${teamOne} wins (${teamOneAverage} vs. ${teamTwoAverage})`);
@@ -73,7 +73,7 @@ const checkWinner = (teamOneAverage, teamTwoAverage, teamOne, teamTwo) => {
   }
 }
 checkWinner(dolphinsAverage, koalasAverage, 'Dolphins', 'Koalas')
-dolphinsAverage = clacAverage(85, 54, 41), koalasAverage = clacAverage(23, 34, 27) //Test Data#2
+dolphinsAverage = calcAverage(85, 54, 41), koalasAverage = calcAverage(23, 34, 27) //Test Data#2
 checkWinner(dolphinsAverage, koalasAverage, 'Dolphins ', 'Koalas')
 
 /*****************************************************/
@@ -246,5 +246,27 @@ console.log(percentages8);
 /*****************************************************/
 
 // Coding Challenge#4
+const bills2 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52] //Test Data
+const tips2 = []
+const totals2 = []
+for (let i = 0; i < bills2.length; i++) {
+  const bill = bills2[i]
+  const tip = clacTip(bill)
+  const total = bill + tip
+  tips2.push(tip)
+  totals2.push(total)
+}
+console.log(tips2);
+console.log(totals2);
+// Bonus
+const calcAnyAverage = arr => {
+  let sum = 0
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]
+  }
+  return sum / arr.length
+}
+console.log(calcAnyAverage(totals2));
+console.log(calcAnyAverage(tips2));
 
 /*****************************************************/
