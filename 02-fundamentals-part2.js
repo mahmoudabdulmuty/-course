@@ -231,6 +231,17 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
 /*****************************************************/
 
 // The while Loop
+const populations8 = [1441, 100, 6, 83]
+const percentages8 = []
+function percentageOfWorld8(population) {
+  return ((population / 7900) * 100).toFixed(1)
+}
+let i = 0;
+while (i < populations8.length) {
+  percentages8.push(percentageOfWorld8(populations8[i]));
+  i++;
+}
+console.log(percentages8);
 
 /*****************************************************/
 
