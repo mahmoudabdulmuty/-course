@@ -119,14 +119,26 @@ const myCountry = {
   capital: 'Cairo',
   language: 'Arabic',
   population: 100,
-  neighbours: ['Lybia', 'Sudan', 'Palestine', 'Saudi Arabia']
+  neighbours: ['Lybia', 'Sudan', 'Palestine', 'Saudi Arabia'],
+  describe() {
+    this.summary = `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries
+    and a capital called ${this.capital}`
+    return this.summary
+  },
+  checkIsland() {
+    this.isIsland = this.neighbours.length === 0 ? true : false
+    return this.isIsland
+  }
 }
 console.log(myCountry);
-/*****************************************************/
 
 // Dot vs. Bracket Notation
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries
 and a capital called ${myCountry.capital}`)
+
+// Object Methods
+myCountry.describe()
+myCountry.checkIsland()
 
 /*****************************************************/
 
@@ -149,10 +161,6 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} firends, and his bes
 // Object Methods Challenge
 console.log(jonas.calcAge());
 console.log(jonas.getSummary());
-
-/*****************************************************/
-
-// Object Methods
 
 /*****************************************************/
 
