@@ -199,18 +199,27 @@ console.log(result);
 /*****************************************************/
 
 // Iteration: The for Loop
+for (let index = 1; index <= 50; index++) {
+  console.log(`Voter number ${index} is currently voting`);
+}
 
 /*****************************************************/
 
 // Looping Arrays, Breaking and Continuing
-
-/*****************************************************/
-
-// Continue and break
+const populations9 = [1441, 100, 6, 83]
+const percentages9 = []
+function percentageOfWorld9(population) {
+  return ((population / 7900) * 100).toFixed(1)
+}
+for (let i = 0; i < populations9.length; i++) {
+  percentages9.push(percentageOfWorld9(populations9[i]))
+}
+console.log(percentages9);
 
 /*****************************************************/
 
 // Looping Backwards and Loops in Loops
+
 
 /*****************************************************/
 
