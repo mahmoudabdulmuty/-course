@@ -219,7 +219,14 @@ console.log(percentages9);
 /*****************************************************/
 
 // Looping Backwards and Loops in Loops
-
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+  'Russia']];
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  let Neighbours = listOfNeighbours[i]
+  for (let j = 0; j < Neighbours.length; j++) {
+    console.log(`Neighbour: ${Neighbours[j]}`);
+  }
+}
 
 /*****************************************************/
 
