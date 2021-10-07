@@ -70,10 +70,9 @@ const printForcast = arr => {
 	for (let i = 0; i < arr.length; i++) {
 		let temp = arr[i];
 		let day = i + 1;
-		statement += `... ${temp}c in ${day} ${day === 1 ? `day` : `days`} `;
+		statement += `${temp}c in ${day} ${day === 1 ? `day` : `days`} ... `;
 	}
-	statement += ` ...`;
-	return statement;
+	return `... ${statement}`;
 };
 
 const arr1 = [17, 21, 23]; // TEST DATA 1
