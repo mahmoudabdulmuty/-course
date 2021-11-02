@@ -62,10 +62,10 @@ console.log(amplitudeVal2);
 
 // Challenge#1
 
-// print forcast temp like this :
+// print forecast temp like this :
 // '... 17c in 1 days ... 21c in 2 days ... 23c in 3 days ...'
 
-const printForcast = arr => {
+const printForecast = arr => {
 	let statement = ``;
 	for (let i = 0; i < arr.length; i++) {
 		let temp = arr[i];
@@ -78,5 +78,5 @@ const printForcast = arr => {
 const arr1 = [17, 21, 23]; // TEST DATA 1
 const arr2 = [12, 5, -5, 0, 4]; // TEST DATA 2
 
-console.log(printForcast(arr1));
-console.log(printForcast(arr2));
+console.log(printForecast(arr1));
+console.log(printForecast(arr2));
