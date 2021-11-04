@@ -58,11 +58,15 @@ console.log(markBMI, JohnBMI, isMarkHasHeigherBMI);
 // Coding Challenge#2
 if (markBMI > JohnBMI)
 	console.log(
-		`Mark's BMI (${markBMI.toFixed(1)}) is higher than John's BMI (${JohnBMI.toFixed(1)})`
+		`Mark's BMI (${markBMI.toFixed(
+			1
+		)}) is higher than John's BMI (${JohnBMI.toFixed(1)})`
 	);
 else
 	console.log(
-		`John's BMI (${JohnBMI.toFixed(1)}) is higher than Mark's BMI (${markBMI.toFixed(1)})`
+		`John's BMI (${JohnBMI.toFixed(
+			1
+		)}) is higher than Mark's BMI (${markBMI.toFixed(1)})`
 	);
 
 /*****************************************************/
@@ -107,62 +111,86 @@ if (language === 'English' && population < 50 && !isIsland) {
 /*****************************************************/
 
 // Coding Challenge#3
-let dolpinsAverage = (96 + 108 + 89) / 3, koalasAverage = (88 + 91 + 110) / 3 // Test Data
+let dolpinsAverage = (96 + 108 + 89) / 3,
+	koalasAverage = (88 + 91 + 110) / 3; // Test Data
 console.log(dolpinsAverage, koalasAverage);
 if (dolpinsAverage > koalasAverage) console.log(`Dolpins is the winner`);
 else if (dolpinsAverage < koalasAverage) console.log(`Koalas is the winner`);
 else console.log(`Draw`);
 // min 100 for average score
-dolpinsAverage = (97 + 112 + 101) / 3, koalasAverage = (109 + 95 + 123) / 3 //TEST DATA BOUNUS 1
-if (dolpinsAverage > koalasAverage && dolpinsAverage >= 100) console.log(`Dolpins is the winner`);
-else if (dolpinsAverage < koalasAverage && koalasAverage >= 100) console.log(`Koalas is the winner`);
+(dolpinsAverage = (97 + 112 + 101) / 3), (koalasAverage = (109 + 95 + 123) / 3); //TEST DATA BOUNUS 1
+if (dolpinsAverage > koalasAverage && dolpinsAverage >= 100)
+	console.log(`Dolpins is the winner`);
+else if (dolpinsAverage < koalasAverage && koalasAverage >= 100)
+	console.log(`Koalas is the winner`);
 else if (dolpinsAverage === koalasAverage) console.log(`Draw`);
 else console.log(`No one wins`);
 // min 100 for average score to also draw
-dolpinsAverage = (97 + 112 + 101) / 3, koalasAverage = (109 + 95 + 106) / 3 //TEST DATA BOUNUS 2
-if (dolpinsAverage > koalasAverage && dolpinsAverage >= 100) console.log(`Dolpins is the winner`);
-else if (dolpinsAverage < koalasAverage && koalasAverage >= 100) console.log(`Koalas is the winner`);
-else if (dolpinsAverage === koalasAverage && koalasAverage >= 100 && dolpinsAverage >= 100) console.log(`Draw`);
+(dolpinsAverage = (97 + 112 + 101) / 3), (koalasAverage = (109 + 95 + 106) / 3); //TEST DATA BOUNUS 2
+if (dolpinsAverage > koalasAverage && dolpinsAverage >= 100)
+	console.log(`Dolpins is the winner`);
+else if (dolpinsAverage < koalasAverage && koalasAverage >= 100)
+	console.log(`Koalas is the winner`);
+else if (
+	dolpinsAverage === koalasAverage &&
+	koalasAverage >= 100 &&
+	dolpinsAverage >= 100
+)
+	console.log(`Draw`);
 else console.log(`No one wins`);
 
 /*****************************************************/
 
 // writing if-else instead of switch cases challenge
-const day = 'monday'
-if (day === 'sunday' || day === 'monday') console.log('plan course structure', 'Go to coding bootcamp');
+const day = 'monday';
+if (day === 'sunday' || day === 'monday')
+	console.log('plan course structure', 'Go to coding bootcamp');
 else if (day === 'tuesday') console.log('prepare theory videos');
-else if (day === 'wednesday' || day === 'thursday') console.log('Write code examples');
-else if (day === 'friday' || day === 'staurday') console.log('Enjoy the weekend ');
+else if (day === 'wednesday' || day === 'thursday')
+	console.log('Write code examples');
+else if (day === 'friday' || day === 'staurday')
+	console.log('Enjoy the weekend ');
 
 /*****************************************************/
 
 // The switch Statement
 switch (language) {
 	case 'Chinese':
-	case 'Mandarian': console.log(`MOST Number of native speakers!`);
+	case 'Mandarian':
+		console.log(`MOST Number of native speakers!`);
 		break;
-	case 'Spanish': console.log(`2nd place in native speakers`);
+	case 'Spanish':
+		console.log(`2nd place in native speakers`);
 		break;
-	case 'English': console.log(`3rd place`);
+	case 'English':
+		console.log(`3rd place`);
 		break;
-	case 'Hindi': console.log(`Number 4`);
+	case 'Hindi':
+		console.log(`Number 4`);
 		break;
-	case 'Arabic': console.log(`5th most spoken language`);
+	case 'Arabic':
+		console.log(`5th most spoken language`);
 		break;
-	default: console.log(`Greet language too :D`);
+	default:
+		console.log(`Greet language too :D`);
 }
 /*****************************************************/
 
 // The Conditional (Ternary) Operator
-console.log(`${country}'s population is ${population > average ? 'above' : 'below'} average`)
+console.log(
+	`${country}'s population is ${
+		population > average ? 'above' : 'below'
+	} average`
+);
 
 /*****************************************************/
 
 // Coding Challenge#4
-let bill = 275, bill = 40, bill = 430 //Test Data
-const tip = (bill > 50 && bill < 300) ? 0.15 * bill : 0.2 * bill
-const total = tip + bill
-console.log(`The bill was ${bill}, the tip was ${tip}, the total was ${total}`)
+let bill = 275,
+	bill = 40,
+	bill = 430; //Test Data
+const tip = bill > 50 && bill < 300 ? 0.15 * bill : 0.2 * bill;
+const total = tip + bill;
+console.log(`The bill was ${bill}, the tip was ${tip}, the total was ${total}`);
 
 /*****************************************************/
-
