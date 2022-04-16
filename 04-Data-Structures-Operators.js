@@ -1,44 +1,44 @@
 'use strict';
 
 const game = {
-	team1: 'Bayern Munich',
-	team2: 'Borrussia Dortmund',
-	players: [
-		[
-			'Neuer',
-			'Pavard',
-			'Martinez',
-			'Alaba',
-			'Davies',
-			'Kimmich',
-			'Goretzka',
-			'Coman',
-			'Muller',
-			'Gnarby',
-			'Lewandowski'
-		],
-		[
-			'Burki',
-			'Schulz',
-			'Hummels',
-			'Akanji',
-			'Hakimi',
-			'Weigl',
-			'Witsel',
-			'Hazard',
-			'Brandt',
-			'Sancho',
-			'Gotze'
-		]
-	],
-	score: '4:0',
-	scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
-	date: 'Nov 9th, 2037',
-	odds: {
-		team1: 1.33,
-		x: 3.25,
-		team2: 6.5
-	}
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
 };
 
 // Coding Challenge#1
@@ -84,14 +84,14 @@ const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 
 // 5.
 const {
-	odds: { team1, x: draw, team2 }
+  odds: { team1, x: draw, team2 },
 } = game;
 // console.log(team1, draw, team2);
 
 // 6.
 const printGoals = function (...players) {
-	// console.log(players);
-	console.log(`${players} scored ${players.length}`);
+  // console.log(players);
+  console.log(`${players} scored ${players.length}`);
 };
 // printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
 // printGoals('Davies', 'Muller');
@@ -99,7 +99,7 @@ const printGoals = function (...players) {
 
 // 7.
 function checkWiningTeam(team) {
-	console.log(`${team} is more likely to win`);
+  console.log(`${team} is more likely to win`);
 }
 // game.odds.team1 < game.odds.team2 && checkWiningTeam(game.team1);
 // game.odds.team1 > game.odds.team2 && checkWiningTeam(game.team2);
@@ -130,18 +130,18 @@ function checkWiningTeam(team) {
 // 1.
 const playersEntries = Object.entries(game.scored);
 for (let [i, player] of playersEntries) {
-	// console.log(`Goal ${+i + 1}: ${player}`);
+  // console.log(`Goal ${+i + 1}: ${player}`);
 }
 
 // 2.
 const oddsValues = Object.values(game.odds);
 
 function calcAvg(arr) {
-	let sum = 0;
-	for (let item of arr) {
-		sum += item;
-	}
-	// console.log(sum / arr.length);
+  let sum = 0;
+  for (let item of arr) {
+    sum += item;
+  }
+  // console.log(sum / arr.length);
 }
 
 calcAvg(oddsValues);
@@ -151,14 +151,14 @@ calcAvg(oddsValues);
 const oddsArray = Object.entries(game.odds);
 
 for (let [key, value] of oddsArray) {
-	// console.log(`odd of victory ${game[key] ?? 'draw'}: ${value}`);
+  // console.log(`odd of victory ${game[key] ?? 'draw'}: ${value}`);
 }
 
 // 4.
 
 const scorers = {};
 for (const player of game.scored) {
-	scorers[player] ? scorers[player]++ : (scorers[player] = 1);
+  scorers[player] ? scorers[player]++ : (scorers[player] = 1);
 }
 
 // console.log(scorers);
