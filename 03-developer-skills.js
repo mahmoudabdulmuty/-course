@@ -3,7 +3,7 @@
 const temps = [1, -1, -2, 4, 19, 5, 20, 'err', 10, 3];
 
 // amplitude = max - min
-const amplitude = (arr) => {
+const amplitude = arr => {
   // find max and min steps:
 
   // 1- let first item in the array is max and min
@@ -65,7 +65,7 @@ console.log(amplitudeVal2);
 // print forecast temp like this :
 // '... 17c in 1 days ... 21c in 2 days ... 23c in 3 days ...'
 
-const printForecast = (arr) => {
+const printForecast = arr => {
   let statement = ``;
   for (let i = 0; i < arr.length; i++) {
     let temp = arr[i];

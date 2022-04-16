@@ -50,8 +50,7 @@ console.log(
 /*****************************************************/
 
 // Arrow Functions
-const percentageOfWorld3 = (population) =>
-  ((population / 7900) * 100).toFixed(1);
+const percentageOfWorld3 = population => ((population / 7900) * 100).toFixed(1);
 const ChinaPercentageOfWorld = percentageOfWorld3(1441);
 const EgyptPercentageOfWorld = percentageOfWorld3(100);
 const GermanyPercentageOfWorld = percentageOfWorld3(83);
@@ -127,7 +126,7 @@ console.log(neighbours);
 /*****************************************************/
 
 // Coding Challenge#2
-const clacTip = (bill) => (bill > 50 && bill < 300 ? 0.15 * bill : 0.2 * bill);
+const clacTip = bill => (bill > 50 && bill < 300 ? 0.15 * bill : 0.2 * bill);
 const bills = [125, 555, 44]; //Test Data
 const tips = [clacTip(bills[0]), clacTip(bills[1]), clacTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
@@ -301,7 +300,7 @@ for (let i = 0; i < bills2.length; i++) {
 console.log(tips2);
 console.log(totals2);
 // Bonus
-const calcAnyAverage = (arr) => {
+const calcAnyAverage = arr => {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
